@@ -1,0 +1,421 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-style{
+    background-color: #fff;
+    box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15);
+}
+.logo img{
+    height: 40px;
+    width: 40px;
+}
+.navbar-nav li a{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    /* color: #FF7230; */
+    color: #333;
+    position: relative;
+}
+ .navbar-nav li .active{
+    color: #ff7230 !important;
+}
+.navbar-nav li a:before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    bottom: 50px;
+    width: 0%;
+    height: 3px;
+    background: #ff7230;
+    transition: all 0.3s linear;
+}
+.navbar-nav li a:hover:before{
+    width: 80%;
+}
+.navbar-nav li a:hover{
+    color: #ff7230 !important;
+}
+
+.float img{
+    float: right !important;
+}
+
+
+@media (max-width: 998px){
+    .navbar-nav{
+        margin-top: 40px !important;
+        text-align: center !important;
+    }
+    .navbar-nav li a:hover:before{
+        width: 0%;
+    }
+}
+
+/* header  */
+
+.header-text{
+    font-size: 26px;
+    color: #8c8c8c;
+    margin-top: 80px;
+}
+.header-text2{
+    font-size: 26px;
+    color: #2d3436;
+    margin-bottom: 50px;
+}
+.span_header_text{
+    color: #ff7230;
+}
+.hire_me{
+    width: 160px;
+    height: 40px;
+    background: #ff7230;
+    font-size: 20px;
+    color: #fff;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    transition: all 0.3s linear;
+}
+.about_me{
+    width: 160px;
+    height: 40px;
+    background: #fff;
+    font-size: 20px;
+    color: #ff7230;
+    text-transform: capitalize;
+    outline: none;
+    border: 1px solid #ff7230;
+    transition: all 0.3s linear; 
+}
+.hire_me:hover{
+    background: #fff;
+    color: #ff7230;
+    border: 1px solid #ff7230;
+}
+.about_me:hover{
+    background: #ff7230;
+    color: #fff;
+    border: none;
+}
+.header_mail{
+    margin-top: 40px;
+    font-size: 20px;
+    color: #000;
+    font-weight: 400;
+}
+.header_mail p:nth-child(2){
+    margin-top: -20px;
+}
+.header_email_para{
+    font-weight: bold;
+}
+
+
+/* about  */
+.about_sec{
+    padding-top: 50px;
+    background-color: rgba(241, 238, 238, 0.765);
+}
+.main-title h1{
+    font-weight: 500;
+    font-size: 70px;
+    color: #000;
+    text-transform: capitalize;
+    /* position: relative; */
+    text-align: center;
+} 
+.about_text {
+    margin-bottom: 60px;
+}
+.about_text h1{
+    font-size: 33px;
+    color: #000;
+    margin-top: -20px;
+    margin-bottom: 25px;
+}
+.about_text h2{
+    font-size: 24px;
+
+}
+.about_text p{
+    font-size: 24px;
+    color: #000;
+
+}
+/* expert section  */
+.expert_sec{
+    padding-top: 50px;
+   
+
+}
+.main-title p{
+    font-size: 26px;
+    color: #000;
+    text-align: center;
+}
+.common_div {
+    margin-top: 50px;
+}
+.expert_sec .progress{
+    width: 90%;
+    border-radius: 7px;
+    height: 14px;
+}
+.expert_sec .pb_1{
+    width: 93%;
+    border-radius: 7px;
+    background-color: #ea2148;
+}
+.expert_sec .pb_2{
+    width: 93%;
+    border-radius: 7px;
+    background-color:#ff7230 ;
+}
+.expert_sec .pb_3{
+    width: 93%;
+    border-radius: 7px;
+    background-color:#1c9588 ;
+}
+.expert_sec h2{
+    position: relative;
+}
+
+.expert_h1:after{
+    content: "93%";
+    position: absolute;
+    top: 10px;
+    right: 80px;
+    font-size: 16px;
+    color: #000;
+    font-size: 500;
+}
+.expert_h2:after{
+    content: "83%";
+    position: absolute;
+    top: 10px;
+    right: 80px;
+    font-size: 16px;
+    color: #000;
+    font-size: 500;
+}
+.expert_h3:after{
+    content: "88%";
+    position: absolute;
+    top: 10px;
+    right: 80px;
+    font-size: 16px;
+    color: #000;
+    font-size: 500;
+}
+
+/* servicies  */
+.ser{
+    font-weight: bold;
+}
+.our_ser{
+    padding: 50px 0px 70px 0px;
+    background-color: rgba(241, 238, 238, 0.765);
+}
+.services_div{
+    border-radius: #f6f6f6;
+    padding: 20px 10px 70px 10px;
+    margin-top: 50px;
+    transition: all 0.1s linear;
+    position: relative;
+    box-shadow: 0 10px 30px 0 rgba(67, 73, 78, 0.15);
+}
+.services_div:hover{
+    background-color: #fff;
+    box-shadow: 0 0 4px 1px grey;
+}
+.services_div h1{
+    text-align: center;
+    font-size: 52px;
+    color: #ff7230;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: auto;
+    background: #ffeee6;
+}
+.services_div h1:hover{
+    background: #fff;
+    border: 1px solid #ff7230;
+}
+.services_div .service_list_icon{
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+}
+.fa-heart{
+    color: #f0eeee;
+    position: absolute;
+    bottom: 1px;
+    left: 1px;
+}
+.services_div:hover .fa-heart{
+    color: #ffeee6;
+}
+
+.services_div .col-lg-3 .col-md-4 .col-11{
+    padding-right: 0px !important;
+    padding-bottom: 0px !important;
+}
+.services_div li{
+    list-style: none;
+    font-size: 23px;
+    color: #000;
+    font-weight: 300;
+    text-transform: capitalize;
+    padding-left: 5px;
+}
+.services_div li:first-child{
+    padding-top: 20px;
+}
+.services_div .service_list_icon{
+    width: 14px;
+    height: 14px;
+    margin-left: 5px;
+}
+
+/* hire me  */
+.hireme_section{
+    padding: 45px 0;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("https://c1.wallpaperflare.com/preview/248/992/890/business-business-meeting-coffee-conference-room.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.hireme_section h1{
+    font-size: 40px;
+    color: #ff7230;
+}
+.hireme_section p{
+    font-size: 32px;
+    color: #fff;
+    letter-spacing: 3px;
+}
+.hireme_section h3{
+    font-size: 30px;
+    color: #fff;
+    margin-top: -10px;
+    padding-bottom: 30px;
+}
+
+/* contact  */
+.contact_img img{
+    width: 220px;
+    height: 330px;
+}
+/* .contactme_sec{
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.contact-img img{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+} */
+
+
+/* contact_share & share start...................  */
+.contact_share_div{
+    /* width: 30%;
+    height: 150px; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background: #f6f6f6;
+    transition: all 0.2s linear;
+  }
+  .contact_share_div:hover{
+    border-radius: 30px;
+    background-color: #ffffff;
+    border: 1px solid #ff874f;
+    filter: drop-shadow(2px 0px 8px rgba(0,0,0,0.18));
+  }
+  .contact_share_div:hover .fa{
+    color: #ff7230;
+  }
+  .contact_share_div p{
+    margin: 0;
+  }
+  .contact_share_div:hover p{
+    color: #ff7230;
+  }
+  
+  /* socialsites_links staet.................... */
+  .socialsites_links .fa-facebook:hover{
+    color: #ff7230;
+  }
+  
+  
+  .socialsites_links .fa-instagram:hover{
+    color: #ff7230;
+  }
+  
+  
+  .socialsites_links .fa-dribbble:hover{
+    color: #ff7230;
+  }
+  
+  
+  .socialsites_links .fa-pinterest:hover{
+    color: #ff7230;
+  }
+  
+  
+  .socialsites_links .fa-behance:hover{
+    color: #ff7230;
+  }
+  
+  /* footer start  */
+  footer{
+    width: 100%;
+    height: 50px;
+    background: #ff7230;
+    color: #fff;
+  }
+  footer p{
+    padding-top: 10px;
+    /* text-align: center; */
+  }
+  
+  
+  /* media query start  */
+  @media (max-width : 992px){
+    .main_titleh1{
+      font-size: 40px;
+    }
+    .about_text{
+      margin-top: 40px;
+    }
+    .about_text h1{
+      /* font-size: 26px; */
+      font-weight: bold;
+    }
+    .about_text p{
+      font-size: 20px;
+      line-height: 1.5;
+    }
+    .common_div{
+      text-align: center;
+      justify-content: center;
+      margin-top: 30px !important;
+      margin: auto;
+    }
+    /* .contact_inner{
+      margin: auto;
+      margin-top: 10px;
+    } */
+  }
